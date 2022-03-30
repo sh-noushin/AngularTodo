@@ -1,0 +1,50 @@
+<info-message></info-message>
+<exception-message></exception-message>
+<validation-message></validation-message>
+ 
+           
+
+
+<!-- TEMPORARY CODE TO VIEW SECURITY OBJECT -->
+<div class="row">
+  <div class="col">
+    <label>{{securityObject | json}}</label>
+  </div>
+</div>
+
+<form style="text-align:center;" >
+  <div style="  width: 250px; margin-left: 43%; background-color: rgb(235, 242, 243); border-style: groove; border-radius: 15pt;" >
+          
+        <div class="card-header"style="padding: 15px; background-color: rgb(121, 193, 230); border-top-right-radius: 15pt; border-top-left-radius: 15pt;" >
+          <h2 class="card-title" >Log in</h2>
+        </div>
+       <mat-form-field color="accent" style="height: 60px;" >
+          <div class="form-group" style="margin-top: 10px;">
+            <label for="userName" >User Name</label>
+            <input id="userName" name="userName"
+                   class="form-control" required
+                   [(ngModel)]="user.userName"
+                   autofocus="autofocus" 
+                   style="margin-top: 8px;"/>
+          </div>
+        </mat-form-field>
+        <br>
+        <mat-form-field color="accent" style="height: 60px;" >
+          <div class="form-group" style="margin-top: 15px;">
+            <label for="password" >Password</label>
+            <input id="password" name="password"
+                   class="form-control" required
+                   [(ngModel)]="user.password"
+                   type="password" 
+                   style="margin-top: 8px;"/>
+          </div>
+        </mat-form-field>
+       
+        <div mat-dialog-actions style=" margin-top: 40px; background-color: rgb(121, 193, 230); height: 80px; border-bottom-right-radius: 15pt; border-bottom-left-radius: 15pt;">
+          <button class="m-3" mat-raised-button  color="primary" (click)="login()" style="margin-top: 25px; margin-bottom: 35px;">
+            Login
+          </button>
+        </div>
+      </div>
+  
+</form>

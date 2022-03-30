@@ -1,0 +1,21 @@
+<div class="form" style="scroll-behavior: unset;">
+    <mat-form-field color="accent">
+      <input matInput  #input class="form-control" placeholder="UserName" required minlength="2" maxlength="20" 
+      type="text" [(ngModel)]="username" >
+     
+     
+    </mat-form-field>
+    <br>
+    <mat-form-field color="accent">
+    
+      <input matInput  #input class="form-control" placeholder="Password" required minlength="2" maxlength="20" 
+      type="text" [(ngModel)]="password" >
+     
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button class="m-3" mat-raised-button  color="primary"  type="submit" (click)="onClick()">Login</button>
+   
+  </div>
+             

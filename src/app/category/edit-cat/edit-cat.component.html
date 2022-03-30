@@ -1,0 +1,43 @@
+<div class="d-flex justify-content-between m-3">
+    <h4>Edit Category</h4>
+    
+    <button mat-button mat-mini-fab (click)="onClose()">
+      <mat-icon>close</mat-icon>
+    </button>
+    
+    </div>
+  
+
+    <div style="overflow: auto; height: 450px; width: 450px;">
+    
+  
+    <form class="mat-dialog-content" (ngSubmit)="onSubmit(formControl.value)" #formControl="ngForm">
+  
+      <div class="m-3 input-group">
+        
+      <div class="form">
+        <mat-form-field color="accent">
+          <input matInput #input class="form-control" placeholder="Id" [(ngModel)]="this.data.id" name="id" readonly="readonly" >
+          
+        </mat-form-field>
+      </div>
+      </div>
+  
+      <div class="m-3 input-group">
+        
+      <div class="form">
+        <mat-form-field color="accent">
+          <input matInput  #input class="form-control" placeholder="Name" [(ngModel)]="this.data.name" name="name" required >
+          
+        </mat-form-field>
+      </div>
+      </div>
+  
+                             
+  
+      <div mat-dialog-actions>
+        <button class="m-3" mat-raised-button  color="primary" type="submit" [disabled]="!formControl.valid" [mat-dialog-close]="1" type="submit">Save</button>
+        <button class="m-3" mat-raised-button color="primary" (click)="onNoClick()" tabindex="-1">Cancel</button>
+      </div>
+    </form>
+  </div>
