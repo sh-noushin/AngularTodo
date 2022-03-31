@@ -21,6 +21,9 @@ export class AppUserAuth extends UserAuthBase {
       this.canEditTodos = false;
       this.canDeleteTodos = false;
     }
-  
+    getValueOfProperty(obj: any ,key: string):boolean{
+    let ret = obj[key];
+    return ret;
+  }
   }
   

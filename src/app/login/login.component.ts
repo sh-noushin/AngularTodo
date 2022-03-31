@@ -25,6 +25,11 @@ export class LoginComponent implements OnInit {
     this.msgService.clearAll();
     this.securityObject?.init();
     this.securityService.login(this.user)
-    .subscribe(resp => this.securityObject = resp);
+    .subscribe(resp => {
+      localStorage.setItem("AuthObject" , JSON.stringify(resp));
+      this.securityObject = resp;
+    }
+      
+      );
   }
 }

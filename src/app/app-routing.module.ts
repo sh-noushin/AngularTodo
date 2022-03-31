@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ShowCatComponent } from './category/show-cat/show-cat.component';
 import { LoginComponent } from './login/login.component';
+import { AuthGuard } from './shared/guards/auth.guard';
 import { ShowTodoComponent } from './todoitem/show-todo/show-todo.component';
 
 const routes: Routes = [
@@ -9,12 +10,16 @@ const routes: Routes = [
 
   {
     path: 'categories',
-    component: ShowCatComponent
+    component: ShowCatComponent,
+    canActivate:[AuthGuard],
+    data:{ claimType :' csanAccessCategories'}
   },
     
   {
     path: 'todos',
-    component: ShowTodoComponent
+    component: ShowTodoComponent,
+    canActivate:[AuthGuard],
+    data:{ claimType :' canAccessTodos'}
   },
   {
     path: 'login',
