@@ -1,11 +1,14 @@
-<mat-form-field appearance="standard">
-    <mat-label>Filter</mat-label>
-    <input matInput (keyup)="applyFilter($event)" placeholder="Search columns" #input>
-  </mat-form-field>
+
   
-  <div style="overflow:auto;">
-      <div class="mat-elevation-z8">
-     
+  <div style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
+  width: 80%; align-self: center;">
+      <div class="mat-elevation-z8" style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
+      width: 80%; align-self: center;">
+        <mat-form-field appearance="standard" style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
+        width: 20%; align-self: left;">
+          <mat-label>Filter</mat-label>
+          <input matInput (keyup)="applyFilter($event)" placeholder="Search columns" #input>
+        </mat-form-field>
         <table mat-table [dataSource] = "listData" matSort #empTbSort="matSort" matSort (matSortChange)="announceSortChange($event)">
          
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
@@ -44,16 +47,19 @@
         </ng-container>
       
         </table>
+        <mat-paginator #paginator [length]="totalRows" [pageIndex]="currentPage" [pageSize]="pageSize"
+        [pageSizeOptions]="pageSizeOptions" (page)="pageChanged($event)" aria-label="Select page" >
+      </mat-paginator>
       </div>
   
-      <mat-paginator #paginator [length]="totalRows" [pageIndex]="currentPage" [pageSize]="pageSize"
-      [pageSizeOptions]="pageSizeOptions" (page)="pageChanged($event)" aria-label="Select page" >
-    </mat-paginator>
+     
+
+    <!-- <div class="example-button-container"> -->
+      <button mat-fab  aria-label="Example icon button with a heart icon" (click)="onAdd()"
+      style="background-color:rgb(51, 151, 233);  border: none; margin-left:150px; margin-top:10px; margin-bottom: 30px; align-self: left;">
+        <mat-icon aria-label="Add">add</mat-icon>
+      </button>
+    <!-- </div> -->
       </div>
-      <div class="example-button-container">
-        <button mat-fab  aria-label="Example icon button with a heart icon" (click)="onAdd()"
-        style="background-color:rgb(51, 151, 233);  border: none; ">
-          <mat-icon aria-label="Add">add</mat-icon>
-        </button>
-      </div>
+      
     
