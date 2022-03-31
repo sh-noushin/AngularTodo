@@ -12,7 +12,7 @@ const routes: Routes = [
     path: 'categories',
     component: ShowCatComponent,
     canActivate:[AuthGuard],
-    data:{ claimType :' csanAccessCategories'}
+    data:{ claimType :' canAccessCategories'}
   },
     
   {

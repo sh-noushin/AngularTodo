@@ -23,8 +23,6 @@ export class SecurityService {
         this.securityObject.isAuthenticated = true;
         this.securityObject.canAccessTodos = true;
         this.securityObject.canAccessCategories = true;
-        this.securityObject.canAccessLogs = true;
-        this.securityObject.canAccessSettings = true;
         this.securityObject.canAddTodos = true;
         this.securityObject.canEditTodos = true;
         this.securityObject.canDeleteTodos = true;
@@ -32,8 +30,7 @@ export class SecurityService {
   
       case "bjones":
         this.securityObject.isAuthenticated = true;
-        this.securityObject.canAccessLogs = true;
-        this.securityObject.canAccessSettings = true;
+        
         break;
   
       default:
