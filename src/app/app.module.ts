@@ -22,13 +22,14 @@ import { FormsModule } from '@angular/forms';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
-import { AuthComponent } from './auth/auth.component';
+
 import { HTTP_INTERCEPTORS } from "@angular/common/http";
-import { AuthinterceptorService } from './services/authinterceptor.service';
+
 import { LoginComponent } from './login/login.component';
 import { ValidationMessageComponent } from './shared/messaging/validation-message.component';
 import { InfoMessageComponent } from './shared/messaging/info-message.component';
 import { ExceptionMessageComponent } from './shared/messaging/exception-message.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -42,11 +43,11 @@ import { ExceptionMessageComponent } from './shared/messaging/exception-message.
     AddTodoComponent,
     EditTodoComponent,
     ShowTodoComponent,
-    AuthComponent,
     LoginComponent,
     ValidationMessageComponent,
     InfoMessageComponent,
-    ExceptionMessageComponent
+    ExceptionMessageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -65,11 +66,11 @@ import { ExceptionMessageComponent } from './shared/messaging/exception-message.
     MatInputModule
   ],
   providers: [
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: AuthinterceptorService,
-      multi: true,
-    },
+    // {
+    //   provide: HTTP_INTERCEPTORS,
+    //   useClass: AuthinterceptorService,
+    //   multi: true,
+    // },
   ],
   bootstrap: [AppComponent],
   entryComponents:[AddCatComponent,EditCatComponent]

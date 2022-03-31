@@ -12,6 +12,8 @@ export class AppUserAuth extends UserAuthBase {
     canAddCategories: boolean = false;
     canEditCategories: boolean = false;
     canDeleteCategories: boolean = false;
+
+    canAccessHome : boolean = false;
   
     override init(): void {
      
@@ -25,11 +27,13 @@ export class AppUserAuth extends UserAuthBase {
       this.canAddCategories = false;
       this.canEditCategories = false;
       this.canDeleteCategories = false;
+      this.canAccessHome = false;
 
       
     }
     getValueOfProperty(obj: any ,key: string):boolean{
 
+      
       var ret  = false;
 
       if(key.localeCompare("canAccessTodos")!=0)
@@ -70,6 +74,11 @@ export class AppUserAuth extends UserAuthBase {
       if(key.localeCompare("canDeleteCategories")!=0)
       {
         ret = obj.canDeleteCategories;
+        return ret;
+      }
+      if(key.localeCompare("canSccessHome")!=0)
+      {
+        ret = obj.canAccessHome;
         return ret;
       }
       else

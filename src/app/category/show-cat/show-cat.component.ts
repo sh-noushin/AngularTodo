@@ -131,10 +131,12 @@ export class ShowCatComponent implements OnInit {
 
       });
       this.isLoading = false;
-    }, error => {
-      console.log(error);
-      this.isLoading = false;
-    });
+    }
+    // }, error => {
+    //   console.log(error);
+    //   this.isLoading = false;
+    // }
+    );
      
 
    
