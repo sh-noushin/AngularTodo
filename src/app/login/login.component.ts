@@ -33,6 +33,10 @@ export class LoginComponent implements OnInit {
     .subscribe(resp => {
       localStorage.setItem("AuthObject" , JSON.stringify(resp));
       this.securityObject = resp;
+      if (this.returnUrl)
+      {
+        this.router.navigateByUrl(this.returnUrl);
+      }
     }
       
       );
