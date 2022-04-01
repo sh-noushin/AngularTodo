@@ -1,0 +1,15 @@
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\bin\Debug\net5.0\TodoApp.Domain.deps.json
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\bin\Debug\net5.0\TodoApp.Domain.dll
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\bin\Debug\net5.0\ref\TodoApp.Domain.dll
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\bin\Debug\net5.0\TodoApp.Domain.pdb
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\bin\Debug\net5.0\TodoApp.Domain.Shared.dll
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\bin\Debug\net5.0\TodoApp.Domain.Shared.pdb
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\TodoApp.Domain.csproj.AssemblyReference.cache
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\TodoApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\TodoApp.Domain.AssemblyInfoInputs.cache
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\TodoApp.Domain.AssemblyInfo.cs
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\TodoApp.Domain.csproj.CoreCompileInputs.cache
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\TodoApp.Domain.csproj.CopyComplete
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\TodoApp.Domain.dll
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\ref\TodoApp.Domain.dll
+D:\_Ale\Projects\Github\todo-app-mvc\src\TodoApp\TodoApp.Domain\obj\Debug\net5.0\TodoApp.Domain.pdb

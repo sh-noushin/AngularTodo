@@ -1,0 +1,489 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Web\\TodoApp.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj",
+        "projectName": "TodoApp.Application.Contracts",
+        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj",
+        "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
+        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/NxGtliHkdvibzdjkoMFjALX5cF9av37F2eDLbKhuMkW6P3yYbw/api": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj"
+              },
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application\\TodoApp.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application\\TodoApp.Application.csproj",
+        "projectName": "TodoApp.Application",
+        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application\\TodoApp.Application.csproj",
+        "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
+        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/NxGtliHkdvibzdjkoMFjALX5cF9av37F2eDLbKhuMkW6P3yYbw/api": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj"
+              },
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
+        "projectName": "TodoApp.Domain.Shared",
+        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
+        "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
+        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/NxGtliHkdvibzdjkoMFjALX5cF9av37F2eDLbKhuMkW6P3yYbw/api": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj",
+        "projectName": "TodoApp.Domain",
+        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj",
+        "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
+        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/NxGtliHkdvibzdjkoMFjALX5cF9av37F2eDLbKhuMkW6P3yYbw/api": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj",
+        "projectName": "TodoApp.EntityFrameworkCore",
+        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj",
+        "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
+        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/NxGtliHkdvibzdjkoMFjALX5cF9av37F2eDLbKhuMkW6P3yYbw/api": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "System.Linq.Dynamic.Core": {
+              "target": "Package",
+              "version": "[1.2.15, )"
+            },
+            "System.Linq.Expressions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj",
+        "projectName": "TodoApp.HttpApi",
+        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj",
+        "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
+        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.HttpApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/NxGtliHkdvibzdjkoMFjALX5cF9av37F2eDLbKhuMkW6P3yYbw/api": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Web\\TodoApp.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Web\\TodoApp.Web.csproj",
+        "projectName": "TodoApp.Web",
+        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Web\\TodoApp.Web.csproj",
+        "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
+        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/NxGtliHkdvibzdjkoMFjALX5cF9av37F2eDLbKhuMkW6P3yYbw/api": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj"
+              },
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application\\TodoApp.Application.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application\\TodoApp.Application.csproj"
+              },
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj"
+              },
+              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.12, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

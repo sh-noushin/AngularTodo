@@ -1,65 +1,65 @@
+<div style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
+  width: 100%; align-self: center;">
 
-  
-  <div style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
-  width: 80%; align-self: center;">
-      <div class="mat-elevation-z8" style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
+  <div class="mat-elevation-z8" style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
       width: 80%; align-self: center;">
-        <mat-form-field appearance="standard" style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
+    <mat-form-field appearance="standard" style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
         width: 20%; align-self: left;">
-          <mat-label>Filter</mat-label>
-          <input matInput (keyup)="applyFilter($event)" placeholder="Search columns" #input>
-        </mat-form-field>
-        <table mat-table [dataSource] = "listData" matSort #empTbSort="matSort" matSort (matSortChange)="announceSortChange($event)">
-         
+      <mat-label>Filter</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search columns" #input>
+    </mat-form-field>
+    <table mat-table [dataSource]="listData" matSort #empTbSort="matSort" matSort
+      (matSortChange)="announceSortChange($event)">
+
       <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-      <mat-row *matRowDef="let row; columns:displayedColumns;" ></mat-row>
-      
+      <mat-row *matRowDef="let row; columns:displayedColumns;"></mat-row>
+
       <ng-container matColumnDef="Options">
         <mat-header-cell *matHeaderCellDef style="font-size: 15px; justify-self: center;">Options</mat-header-cell>
         <mat-cell *matCellDef="let row" style="justify-content:left;">
           <button mat-icon-button style="background-color: white; border: none; color: blue;" (click)="onEdit(row)">
             <mat-icon aria-label="Edit">edit</mat-icon>
           </button>
-          <button mat-icon-button style="background-color: white;  border: none; color: red;" (click)="onDelete(row.id)">
-              <mat-icon aria-label="Delete" >delete</mat-icon>
-            </button>
+          <button mat-icon-button style="background-color: white;  border: none; color: red;"
+            (click)="onDelete(row.id)">
+            <mat-icon aria-label="Delete">delete</mat-icon>
+          </button>
         </mat-cell>
       </ng-container>
-      
-      <ng-container matColumnDef="Id"  >
+
+      <ng-container matColumnDef="Id">
         <mat-header-cell *matHeaderCellDef mat-sort-header style="font-size: 15px; width: 150px;">Id</mat-header-cell>
         <mat-header-cell *matCellDef="let element">{{element.id}}</mat-header-cell>
       </ng-container>
-      
-      <ng-container matColumnDef="Title" >
-          <mat-header-cell *matHeaderCellDef mat-sort-header style="font-size: 15px; width: 70px;">Title</mat-header-cell>
-          <mat-header-cell *matCellDef="let element" >{{element.title}}</mat-header-cell>
-        </ng-container>
 
-        <ng-container matColumnDef="Done" >
-          <mat-header-cell *matHeaderCellDef mat-sort-header style="font-size: 15px; width: 70px;">Done</mat-header-cell>
-          <mat-header-cell *matCellDef="let element" >{{element.done}}</mat-header-cell>
-        </ng-container>
+      <ng-container matColumnDef="Title">
+        <mat-header-cell *matHeaderCellDef mat-sort-header style="font-size: 15px; width: 70px;">Title</mat-header-cell>
+        <mat-header-cell *matCellDef="let element">{{element.title}}</mat-header-cell>
+      </ng-container>
 
-        <ng-container matColumnDef="Description" >
-          <mat-header-cell *matHeaderCellDef mat-sort-header style="font-size: 15px; width: 70px;">Description</mat-header-cell>
-          <mat-header-cell *matCellDef="let element" >{{element.description}}</mat-header-cell>
-        </ng-container>
-      
-        </table>
-        <mat-paginator #paginator [length]="totalRows" [pageIndex]="currentPage" [pageSize]="pageSize"
-        [pageSizeOptions]="pageSizeOptions" (page)="pageChanged($event)" aria-label="Select page" >
-      </mat-paginator>
-      </div>
-  
-     
+      <ng-container matColumnDef="Done">
+        <mat-header-cell *matHeaderCellDef mat-sort-header style="font-size: 15px; width: 70px;">Done</mat-header-cell>
+        <mat-header-cell *matCellDef="let element">{{element.done}}</mat-header-cell>
+      </ng-container>
 
-    <!-- <div class="example-button-container"> -->
-      <button mat-fab  aria-label="Example icon button with a heart icon" (click)="onAdd()"
-      style="background-color:rgb(51, 151, 233);  border: none; margin-left:150px; margin-top:10px; margin-bottom: 30px; align-self: left;">
-        <mat-icon aria-label="Add">add</mat-icon>
-      </button>
-    <!-- </div> -->
-      </div>
-      
-    
+      <ng-container matColumnDef="Description">
+        <mat-header-cell *matHeaderCellDef mat-sort-header style="font-size: 15px; width: 70px;">Description
+        </mat-header-cell>
+        <mat-header-cell *matCellDef="let element">{{element.description}}</mat-header-cell>
+      </ng-container>
+
+    </table>
+    <mat-paginator #paginator [length]="totalRows" [pageIndex]="currentPage" [pageSize]="pageSize"
+      [pageSizeOptions]="pageSizeOptions" (page)="pageChanged($event)" aria-label="Select page">
+    </mat-paginator>
+  </div>
+
+
+
+  <!-- <div class="example-button-container"> -->
+  <button mat-fab aria-label="Example icon button with a heart icon" (click)="onAdd()"
+    style="background-color:rgb(51, 151, 233);  border: none; margin-left:150px; margin-top:10px; margin-bottom: 30px; align-self: left;">
+    <mat-icon aria-label="Add">add</mat-icon>
+  </button>
+  <!-- </div> -->
+</div>
