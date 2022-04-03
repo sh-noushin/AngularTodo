@@ -1,25 +1,25 @@
 import {Category} from './category-model';
 
 export class TodoItem{
-    Id:number;
-      Title:string; 
-      Done: boolean;
-      CategoryId:number;
-      Category:Category;
-      Description:string;
+    id:number;
+      title:string; 
+      done: boolean;
+      categoryId:number;
+      //Category:Category;
+      description:string;
 
       constructor()
       {
-        this.Id=0;
-        this.Done=false;
-        this.Title='';
-        this.CategoryId=0;
-        this.Description='';
-        this.Category = {
-            id:0,
-            name:''
+        this.id=0;
+        this.done=false;
+        this.title='';
+        this.categoryId=0;
+        this.description='';
+        // this.Category = {
+        //     id:0,
+        //     name:''
         
-        };
+        // };
         
 
       }

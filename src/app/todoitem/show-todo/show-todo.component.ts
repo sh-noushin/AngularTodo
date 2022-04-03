@@ -73,8 +73,8 @@ ngAfterViewInit(): void {
 onEdit(todo: any)
  {
   //const dialogConfig = new MatDialogConfig<{Id:number ; Name:string;}>();
-  this.service.formData.Id= todo.id;
-  this.service.formData.Title = todo.name;
+  this.service.formData.id= todo.id;
+  this.service.formData.title = todo.name;
 
   let Id = todo.id;
   let Title = todo.name;
@@ -143,7 +143,7 @@ const dialogConfig = new MatDialogConfig();
 dialogConfig.disableClose = true;
 dialogConfig.autoFocus = true;
 dialogConfig.width ="500px";
-dialogConfig.height ="300px";
+dialogConfig.height ="400px";
 this.dialog.open(AddTodoComponent , dialogConfig);
 }
 

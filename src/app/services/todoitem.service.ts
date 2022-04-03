@@ -36,7 +36,7 @@ deleteTodo(id:number)
 
 updateTodo(todo:TodoItem)
 {
- this.http.put(this.APIUrl+'/TodoItems/'+todo.Id,todo,{responseType: 'text'}).subscribe(res =>{
+ this.http.put(this.APIUrl+'/TodoItems/'+todo.id,todo,{responseType: 'text'}).subscribe(res =>{
 
   
  });

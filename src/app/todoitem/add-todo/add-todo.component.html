@@ -1,50 +1,58 @@
-<div class="d-flex justify-content-between m-3">
-  <h3>Add new TodoItem</h3>
 
-  <button mat-button mat-mini-fab (click)="onClose()">
+<div style=" display:flex; flex-direction:column; ">
+
+ <div  style="display:flex; flex-direction: row-reverse; ">
+
+  <button mat-button mat-mini-fab (click)="onClose()" style="justify-self: right; cursor: pointer;">
     <mat-icon aria-label="close">close</mat-icon>
   </button>
 
 </div>
 
-<div style="overflow: auto; height: 300px; width: 300px; scroll-behavior: unset;">
 
-  <form class="mat-dialog-content" #formControl="ngForm" (ngSubmit)="onSubmit(formControl.value)"
-    style="overflow: auto; height: 250px; width: 250px; scroll-behavior: unset;">
+  <form  #formControl="ngForm" (ngSubmit)="onSubmit(formControl.value)"
+ >
+
+    
+    <div class="form" >
+      <mat-form-field color="accent">
+        <input matInput #input class="form-control" placeholder=" Title" required maxlength="20" type="text"
+          [(ngModel)]="newTodo.title" name="title">
+
+      </mat-form-field>
+    </div>
+    <div class="form" >
+      <mat-form-field color="accent">
+        <input matInput #input class="form-control" placeholder="Descriptin" minlength="2" maxlength="20" type="text"
+          [(ngModel)]="newTodo.description" name="description">
+
+      </mat-form-field>
+    </div>
 
     <mat-form-field>
       <mat-label>Plaese select a Category</mat-label>
 
       <mat-select name="select" (selectionChange)="setSelected($event)" [(ngModel)]="selectedCategory">
-        <mat-option *ngFor="let x of categoryItems " [value]="x">
+        <mat-option *ngFor="let x of categoryItems " [value]="x" required>
           {{x.name}}
         </mat-option>
       </mat-select>
     </mat-form-field>
-    <div class="form" style="scroll-behavior: unset;">
-      <mat-form-field color="accent">
-        <input matInput #input class="form-control" placeholder=" Title" required minlength="2" maxlength="20"
-          type="text" ngModel name="title">
+    <div>
+    <label>
+      <input type="checkbox" [checked]="isDone" (change)="checkBoxChanged()">
+      isDone
 
-      </mat-form-field>
-    </div>
-    <div class="form" style="scroll-behavior: unset;">
-      <mat-form-field color="accent">
-        <input matInput #input class="form-control" placeholder="Descriptin" required minlength="2" maxlength="20"
-          type="text" ngModel name="description">
-
-      </mat-form-field>
-    </div>
-<label>
-    <input type="checkbox" [checked]="isDone" (change)="checkBoxChanged()">
-    isDone
-    
     </label>
-
+  </div>
+    <div style="color: red; margin-top: 20px; margin-bottom: 20px;" *ngIf="errorDiv">
+      Category or Title is not entered.
+    </div>
     <div mat-dialog-actions>
-      <button class="m-3" mat-raised-button color="primary" type="submit" [disabled]="!formControl.valid"
-        [mat-dialog-close]="1">Save</button>
+      <button class="m-3" mat-raised-button color="primary" type="submit" [disabled]="!formControl.valid">Save</button>
 
     </div>
+
+
   </form>
 </div>
