@@ -23,6 +23,7 @@ export interface SelectOptionModel {
 export class AddTodoComponent implements OnInit {
 
   todos : TodoItem[]| undefined;
+  isDone:boolean = false;
   public categoryItems:Category[]=[{
     id:0,
     name:''
@@ -34,6 +35,7 @@ export class AddTodoComponent implements OnInit {
     private todoService:TodoitemService,
     public dialogbox: MatDialogRef<AddTodoComponent>,
     @Inject(MAT_DIALOG_DATA) public data: CategoryResponse
+
     ) { }
 
   
@@ -74,5 +76,9 @@ setSelected(e:any)
   console.log(this.selectedCategory?.name);
  
 }
-
+checkBoxChanged()
+{
+  this.isDone = ! this.isDone;
+  console.log(this.isDone);
+}
 }

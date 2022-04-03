@@ -35,8 +35,11 @@
 
       </mat-form-field>
     </div>
-
-
+<label>
+    <input type="checkbox" [checked]="isDone" (change)="checkBoxChanged()">
+    isDone
+    
+    </label>
 
     <div mat-dialog-actions>
       <button class="m-3" mat-raised-button color="primary" type="submit" [disabled]="!formControl.valid"
