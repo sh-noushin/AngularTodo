@@ -47,8 +47,7 @@ getAllCatList(): Observable<Category[]>
  
   return this.http.get<Category[]>(this.APIUrl+'/Categories/AllCategories');
   
-      
-        
+              
   
 }
 

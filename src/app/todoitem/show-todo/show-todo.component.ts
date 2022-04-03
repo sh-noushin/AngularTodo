@@ -20,7 +20,7 @@ export class ShowTodoComponent implements OnInit {
 
   listData: MatTableDataSource<any> = new MatTableDataSource<any>();
   
-  displayedColumns:string[]=["Options","Id", "Title", "Done", "Description"];
+  displayedColumns:string[]=["Options", "Title", "Done", "Description"];
  @ViewChild(MatSort) sort= new MatSort();
  @ViewChild('paginator') paginator!: MatPaginator;
 
@@ -50,9 +50,7 @@ export class ShowTodoComponent implements OnInit {
     this.refreshTodoList();
 
   })
-  
-  
-  
+     
  }
 
  
@@ -73,14 +71,22 @@ ngAfterViewInit(): void {
 onEdit(todo: any)
  {
   //const dialogConfig = new MatDialogConfig<{Id:number ; Name:string;}>();
+
+  console.log(todo.title);
+  console.log(todo.id);
+
   this.service.formData.id= todo.id;
-  this.service.formData.title = todo.name;
+  this.service.formData.title = todo.title;
+  this.service.formData.description = todo.description;
+  this.service.formData.done = todo.done;
 
   let Id = todo.id;
-  let Title = todo.name;
+  let Title = todo.title;
+  let Description = todo.description;
+  let Done = todo.done;
   const dialogRef = this.dialog.open(EditTodoComponent, {
     
-    data: {id: Id, name:Title}
+    data: {id: Id, title:Title,description: Description , done: Done  }
   });
 
   dialogRef.afterClosed().subscribe(result => {

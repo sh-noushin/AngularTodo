@@ -10,7 +10,7 @@ export class TodoitemComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    alert(localStorage.getItem('token'));
+   
   }
 
 }
