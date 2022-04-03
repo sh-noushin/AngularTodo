@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TodoApp.Domain.Shared/1.0.0": {
+        "runtime": {
+          "TodoApp.Domain.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TodoApp.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

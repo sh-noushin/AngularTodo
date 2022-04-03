@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj": {}
+    "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj": {}
   },
   "projects": {
-    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
+    "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
+        "projectUniqueName": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
         "projectName": "TodoApp.Domain.Shared",
-        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
+        "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
         "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
-        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\obj\\",
+        "outputPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj": {
+    "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain\\TodoApp.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj",
+        "projectUniqueName": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain\\TodoApp.Domain.csproj",
         "projectName": "TodoApp.Domain",
-        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj",
+        "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain\\TodoApp.Domain.csproj",
         "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
-        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\obj\\",
+        "outputPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -84,8 +84,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
-                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj"
+              "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj"
               }
             }
           }
@@ -118,14 +118,14 @@
         }
       }
     },
-    "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj": {
+    "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj",
+        "projectUniqueName": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj",
         "projectName": "TodoApp.EntityFrameworkCore",
-        "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj",
+        "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj",
         "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
-        "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\obj\\",
+        "outputPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -143,8 +143,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj": {
-                "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Domain\\TodoApp.Domain.csproj"
+              "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain\\TodoApp.Domain.csproj": {
+                "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain\\TodoApp.Domain.csproj"
               }
             }
           }

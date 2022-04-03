@@ -13,7 +13,7 @@
     style="overflow: auto; height: 250px; width: 250px; scroll-behavior: unset;">
 
     <mat-form-field>
-      <mat-label>Select Category</mat-label>
+      <mat-label>Plaese select a Category</mat-label>
 
       <mat-select name="select" (selectionChange)="setSelected($event)" [(ngModel)]="selectedCategory">
         <mat-option *ngFor="let x of categoryItems " [value]="x">

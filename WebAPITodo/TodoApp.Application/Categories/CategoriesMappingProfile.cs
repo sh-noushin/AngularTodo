@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,15 +9,16 @@ using TodoApp.Domain.Categories;
 
 namespace TodoApp.Application.Categories
 {
-   public class CategoriesMappingProfile: Profile
+  public class CategoriesMappingProfile : Profile
+  {
+
+    public CategoriesMappingProfile()
     {
+      CreateMap<Category, CategoryResponse>();
+      
 
-        public CategoriesMappingProfile()
-        {
-            CreateMap<Category , CategoryResponse>();
-            
-        }
     }
+  }
 
-    
+
 }

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -88,11 +88,18 @@ namespace TodoApp.Web.Controllers
             return Task.FromResult("Deleted").ToString();
         }
 
-       
-
-
-        
+    [HttpGet]
+    [Route("AllCategories")]
+    public async Task<List<CategoryResponse>> GetAllAsync()
+    {
+     
+      return await _categoryService.GettAllAsync();
 
     }
+
+
+
+
+  }
 
 }

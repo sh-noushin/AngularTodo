@@ -57,10 +57,11 @@ export class AddTodoComponent implements OnInit {
 {
 
   
-  this.catService.getCatList('',0,10,'Id asc')
+  this.catService.getAllCatList()
       .subscribe(data =>{
     
-          this.categoryItems = data.items;
+          this.categoryItems = data;
+          console.log(data);
      
     }
     );

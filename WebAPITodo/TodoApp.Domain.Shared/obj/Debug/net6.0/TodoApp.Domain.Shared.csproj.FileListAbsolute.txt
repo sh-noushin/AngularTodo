@@ -22,3 +22,15 @@ D:\_Ale\Projects\MyGitHub\TodoApp\src\TodoApp\TodoApp.Domain.Shared\obj\Debug\ne
 D:\_Ale\Projects\MyGitHub\TodoApp\src\TodoApp\TodoApp.Domain.Shared\obj\Debug\net6.0\ref\TodoApp.Domain.Shared.dll
 D:\_Ale\Projects\MyGitHub\TodoApp\src\TodoApp\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.pdb
 D:\_Ale\Projects\MyGitHub\TodoApp\src\TodoApp\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.csproj.AssemblyReference.cache
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\bin\Debug\net6.0\TodoApp.Domain.Shared.deps.json
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\bin\Debug\net6.0\TodoApp.Domain.Shared.dll
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\bin\Debug\net6.0\TodoApp.Domain.Shared.pdb
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.csproj.AssemblyReference.cache
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.AssemblyInfoInputs.cache
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.AssemblyInfo.cs
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.csproj.CoreCompileInputs.cache
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.dll
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\refint\TodoApp.Domain.Shared.dll
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\TodoApp.Domain.Shared.pdb
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Domain.Shared\obj\Debug\net6.0\ref\TodoApp.Domain.Shared.dll

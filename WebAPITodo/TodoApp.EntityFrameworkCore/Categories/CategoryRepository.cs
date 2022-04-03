@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -49,7 +49,15 @@ namespace TodoApp.EntityFrameworkCore.Categories
 
         }
 
-        public async Task<long> GetCountAsync(string filterText)
+    public async Task<List<Category>> GetAllAsync()
+    {
+      var query = await QueryableAsync();
+      
+      return await query.ToListAsync();
+    }
+   
+
+    public async Task<long> GetCountAsync(string filterText)
         {
             var query = await QueryableAsync();
             query = ApplyFilter(query, filterText);

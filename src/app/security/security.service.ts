@@ -19,7 +19,7 @@ export class SecurityService {
     // Create permissions based on user
     // Eventually this will be returned from a Web API call
     switch (entity.userName.toLowerCase()) {
-      case "psheriff":
+      case "admin":
         this.securityObject.isAuthenticated = true;
         this.securityObject.canAccessTodos = true;
         this.securityObject.canAccessCategories = true;
@@ -28,7 +28,7 @@ export class SecurityService {
         this.securityObject.canDeleteTodos = true;
         break;
   
-      case "bjones":
+      case "guest":
         this.securityObject.isAuthenticated = true;
         
         break;

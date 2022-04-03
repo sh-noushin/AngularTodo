@@ -7821,11 +7821,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Web\\TodoApp.Web.csproj",
+      "projectUniqueName": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Web\\TodoApp.Web.csproj",
       "projectName": "TodoApp.Web",
-      "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Web\\TodoApp.Web.csproj",
+      "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Web\\TodoApp.Web.csproj",
       "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
-      "outputPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Web\\obj\\",
+      "outputPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7843,17 +7843,17 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj": {
-              "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj"
+            "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj": {
+              "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj"
             },
-            "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application\\TodoApp.Application.csproj": {
-              "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.Application\\TodoApp.Application.csproj"
+            "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Application\\TodoApp.Application.csproj": {
+              "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Application\\TodoApp.Application.csproj"
             },
-            "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj": {
-              "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj"
+            "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj": {
+              "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj"
             },
-            "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj": {
-              "projectPath": "D:\\_Noushin\\Projects\\WebAPI\\OldGitHub\\TodoApp\\src\\TodoApp\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj"
+            "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj": {
+              "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.HttpApi\\TodoApp.HttpApi.csproj"
             }
           }
         }
