@@ -63,6 +63,8 @@ export class ShowCatComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+    console.log("heloooooooooooooooo");
      this.refreshCatList();
      this.listData.sort=this.sorting;
     
@@ -88,11 +90,12 @@ export class ShowCatComponent implements OnInit {
     });
 
     dialogRef.afterClosed().subscribe(result => {
-      if (result === 1) {
-                
-        this.refreshCatList();
-      }
+      this.refreshCatList()
     });
+
+    
+    
+       
 }
 
  

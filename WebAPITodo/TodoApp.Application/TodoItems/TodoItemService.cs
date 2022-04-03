@@ -1,4 +1,4 @@
-﻿using AutoMapper;
+using AutoMapper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -75,6 +75,7 @@ namespace TodoApp.Application.TodoItems
             }
             todoitem.SetTitle(input.Title);
             todoitem.Done = input.Done;
+            todoitem.Description = input.Description;
             await _todoitemRepository.UpdateAsync(todoitem);
         }
 

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CategoryService } from 'src/app/services/category.service';
 import { Inject } from '@angular/core';
-import {FormControl, Validators} from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 import { Category } from 'src/app/models/category-model';
+
 
 @Component({
   selector: 'app-edit-cat',
@@ -12,50 +13,53 @@ import { Category } from 'src/app/models/category-model';
 })
 export class EditCatComponent implements OnInit {
 
+
+  returnUrl :string | undefined;
+
   constructor(public dialogRef: MatDialogRef<EditCatComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-     public service: CategoryService) { }
-  
-  
-    ngOnInit(): void {
-  
-     
-        
-    }
+    public service: CategoryService
+    ) { }
+
+
+  ngOnInit(): void {
+
+  }
   formControl = new FormControl('', [
-  Validators.required
-  // Validators.email,
+    Validators.required
+    // Validators.email,
   ]);
-  
+
   getErrorMessage() {
-  return this.formControl.hasError('required') ? 'Required field' :
-  this.formControl.hasError('email') ? 'Not a valid email' :
-  '';
+    return this.formControl.hasError('required') ? 'Required field' :
+      this.formControl.hasError('email') ? 'Not a valid email' :
+        '';
   }
-  
+
   submit() {
-  // emppty stuff
+    // emppty stuff
   }
-  
+
   onNoClick(): void {
-  this.dialogRef.close();
+    this.dialogRef.close();
   }
-  
-  onSubmit(form:any) {
-  var editedCategory = new Category();
-  editedCategory.id = form.id;
-  editedCategory.name= form.name;
-  
-  this.service.updateCategory(editedCategory);
-  this.onClose();
-  
+
+  onSubmit(form: any) {
+    var editedCategory = new Category();
+    editedCategory.id = form.id;
+    editedCategory.name = form.name;
+
+    this.service.updateCategory(editedCategory);
+    this.onClose();
+
   }
-  
-  onClose()
-  {
+
+  onClose() {
     this.dialogRef.close();
     this.service.filter('Register click');
+    
+
   }
-  
-  }
-  
+
+}
+

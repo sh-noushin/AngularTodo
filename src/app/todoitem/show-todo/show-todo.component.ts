@@ -84,16 +84,14 @@ onEdit(todo: any)
   let Title = todo.title;
   let Description = todo.description;
   let Done = todo.done;
+  
   const dialogRef = this.dialog.open(EditTodoComponent, {
     
     data: {id: Id, title:Title,description: Description , done: Done  }
   });
 
   dialogRef.afterClosed().subscribe(result => {
-    if (result === 1) {
-              
-      this.refreshTodoList();
-    }
+    this.refreshTodoList()
   });
 }
 
@@ -119,6 +117,8 @@ refreshTodoList()
   //this.dummyData=[{Id:1 , Name:'IT'},
   //{Id:2 , Name:'Finance'}];
   //this.listData.data=this.dummyData;
+
+  
   this.service.getTodoList(this.filterText,this.skipCount,this.pageSize,this.sortingElement).subscribe(data =>{
     this.listData =new MatTableDataSource(data.items);
     this.totalRows=data.totalCount;
