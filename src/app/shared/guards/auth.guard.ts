@@ -17,10 +17,10 @@ export class AuthGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
       let claimType: string = route.data["claimType"];
-      let auth = localStorage.getItem("AuthObject");
-      if(auth){
-        Object.assign(this.securityService.securityObject , JSON.parse(auth));
-      }
+      // let auth = localStorage.getItem("AuthObject");
+      // if(auth){
+      //   Object.assign(this.securityService.securityObject , JSON.parse(auth));
+      // }
       let isAuth = this.securityService.securityObject.isAuthenticated;
       let isPropTrue = this.securityService.securityObject.getValueOfProperty(this.securityService.securityObject, claimType);
       

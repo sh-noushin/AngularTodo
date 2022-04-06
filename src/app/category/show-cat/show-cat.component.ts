@@ -64,7 +64,7 @@ export class ShowCatComponent implements OnInit {
   ngOnInit(): void {
 
 
-    console.log("heloooooooooooooooo");
+    
      this.refreshCatList();
      this.listData.sort=this.sorting;
     
