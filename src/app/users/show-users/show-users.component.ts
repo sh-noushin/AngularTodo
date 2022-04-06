@@ -119,7 +119,10 @@ export class ShowUsersComponent implements OnInit {
 
   onAdd() {
 
-    const dialogConfig = this.dialog.open(AddUserComponent);
+    const dialogRef = this.dialog.open(AddUserComponent);
+    dialogRef.afterClosed().subscribe(result => {
+      this.refreshUserList()
+    });
   }
 
   pageChanged(event: any) {
