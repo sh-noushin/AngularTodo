@@ -59,7 +59,6 @@ export class AddTodoComponent implements OnInit {
   onSubmit(form: any) {
 
 
-    console.log(+"id is:" + this.selectedCategory?.id + "   title is:" + this.newTodo.title);
     if (this.newTodo.title == "" || this.selectedCategory?.id == null) {
       this.errorDiv = !this.errorDiv;
     }

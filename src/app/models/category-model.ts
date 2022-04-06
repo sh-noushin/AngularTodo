@@ -1,6 +1,6 @@
 
 export class Category{
-    id:any;
+    id:number;
     name:string;
 
     constructor()

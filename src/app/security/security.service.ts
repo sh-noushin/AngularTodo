@@ -23,9 +23,7 @@ export class SecurityService {
         this.securityObject.isAuthenticated = true;
         this.securityObject.canAccessTodos = true;
         this.securityObject.canAccessCategories = true;
-        this.securityObject.canAddTodos = true;
-        this.securityObject.canEditTodos = true;
-        this.securityObject.canDeleteTodos = true;
+        this.securityObject.canAccessUsers = true;
         break;
   
       case "guest":
