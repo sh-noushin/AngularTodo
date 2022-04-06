@@ -27,6 +27,7 @@
   <div class="navbar-nav" style="padding: 10px;">
     <a class="nav-item nav-link" *ngIf="securityObject!.canAccessTodos" color="primary" routerLink="/todos" style="margin-right: 10px; width: 100px; ">Todos</a>
     <a class="nav-item nav-link" *ngIf="securityObject!.canAccessCategories" color="primary"  routerLink="/categories" style="margin-right: 10px; width: 100px;">Categories</a>
+    <a class="nav-item nav-link" *ngIf="!securityObject!.isAuthenticated" color="primary"  routerLink="/users" style="margin-right: 10px; width: 100px;">Users</a>
     <a class="nav-item nav-link" *ngIf="!securityObject!.isAuthenticated" color="primary"  routerLink="/login" style="margin-right: 10px; width: 100px;">Login</a>
     <a class="nav-item nav-link" *ngIf="securityObject!.isAuthenticated" color="primary"  routerLink="/" style="margin-right: 10px; width: 150px;" (click)="logout()">Logout {{securityObject!.userName}}</a>
   </div>

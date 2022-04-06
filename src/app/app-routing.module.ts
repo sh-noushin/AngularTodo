@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AuthGuard } from './shared/guards/auth.guard';
 import { ShowTodoComponent } from './todoitem/show-todo/show-todo.component';
+import { ShowUsersComponent } from './users/show-users/show-users.component';
 
 const routes: Routes = [
 
@@ -25,6 +26,13 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  }
+  ,
+  {
+    path: 'users',
+    component: ShowUsersComponent,
+    canActivate:[AuthGuard],
+    data:{ claimType :' canAccessUsers'}
   }
   ,
   {

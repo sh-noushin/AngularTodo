@@ -13,6 +13,11 @@ export class AppUserAuth extends UserAuthBase {
     canEditCategories: boolean = false;
     canDeleteCategories: boolean = false;
 
+    canAccessUsers: boolean = false;  
+    canAddUsers: boolean = false;
+    canEditUsers: boolean = false;
+    canDeleteUsers: boolean = false;
+
     canAccessHome : boolean = false;
   
     override init(): void {
@@ -27,6 +32,13 @@ export class AppUserAuth extends UserAuthBase {
       this.canAddCategories = false;
       this.canEditCategories = false;
       this.canDeleteCategories = false;
+
+
+      this.canAccessUsers = false;
+      this.canAddUsers = false;
+      this.canEditUsers = false;
+      this.canDeleteUsers = false;
+
       this.canAccessHome = false;
 
       
@@ -76,6 +88,29 @@ export class AppUserAuth extends UserAuthBase {
         ret = obj.canDeleteCategories;
         return ret;
       }
+
+
+      if(key.localeCompare("canAccessUsers")!=0)
+      {
+        ret = obj.canAccessUsers;
+        return ret;
+      }
+      if(key.localeCompare("canAddUsers")!=0)
+      {
+        ret = obj.canAddUsers;
+        return ret;
+      }
+      if(key == "canEditUsers")
+      {
+        ret = obj.canEditUsers;
+      }
+      if(key.localeCompare("canDeleteUsers")!=0)
+      {
+        ret = obj.canDeleteUsers;
+        return ret;
+      }
+
+
       if(key.localeCompare("canSccessHome")!=0)
       {
         ret = obj.canAccessHome;

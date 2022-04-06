@@ -30,6 +30,10 @@ import { ValidationMessageComponent } from './shared/messaging/validation-messag
 import { InfoMessageComponent } from './shared/messaging/info-message.component';
 import { ExceptionMessageComponent } from './shared/messaging/exception-message.component';
 import { HomeComponent } from './home/home.component';
+import { UsersComponent } from './users/users.component';
+import { ShowUsersComponent } from './users/show-users/show-users.component';
+import { AddUserComponent } from './users/add-user/add-user.component';
+import { EditUserComponent } from './users/edit-user/edit-user.component';
 
 
 @NgModule({
@@ -47,7 +51,11 @@ import { HomeComponent } from './home/home.component';
     ValidationMessageComponent,
     InfoMessageComponent,
     ExceptionMessageComponent,
-    HomeComponent
+    HomeComponent,
+    UsersComponent,
+    ShowUsersComponent,
+    AddUserComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
