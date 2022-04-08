@@ -253,6 +253,13 @@ D:\_Ale\Projects\OldGitHub\TodoApp\src\TodoApp\TodoApp.Web\obj\Debug\net6.0\Todo
 D:\_Ale\Projects\OldGitHub\TodoApp\src\TodoApp\TodoApp.Web\obj\Debug\net6.0\ref\TodoApp.Web.dll
 D:\_Ale\Projects\OldGitHub\TodoApp\src\TodoApp\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.pdb
 D:\_Ale\Projects\OldGitHub\TodoApp\src\TodoApp\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.genruntimeconfig.cache
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.csproj.AssemblyReference.cache
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.AssemblyInfoInputs.cache
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.AssemblyInfo.cs
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.csproj.CoreCompileInputs.cache
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.MvcApplicationPartsAssemblyInfo.cs
+D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.MvcApplicationPartsAssemblyInfo.cache
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\bin\Debug\net6.0\appsettings.Development.json
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\bin\Debug\net6.0\appsettings.json
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\bin\Debug\net6.0\TodoApp.Web.exe
@@ -322,13 +329,6 @@ D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\bin\Debug\net6.0
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\bin\Debug\net6.0\TodoApp.HttpApi.pdb
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\bin\Debug\net6.0\TodoApp.Domain.pdb
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\bin\Debug\net6.0\TodoApp.Domain.Shared.pdb
-D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.csproj.AssemblyReference.cache
-D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.GeneratedMSBuildEditorConfig.editorconfig
-D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.AssemblyInfoInputs.cache
-D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.AssemblyInfo.cs
-D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.csproj.CoreCompileInputs.cache
-D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.MvcApplicationPartsAssemblyInfo.cs
-D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\TodoApp.Web.MvcApplicationPartsAssemblyInfo.cache
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\staticwebassets.build.json
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\staticwebassets.development.json
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Web\obj\Debug\net6.0\scopedcss\bundle\TodoApp.Web.styles.css

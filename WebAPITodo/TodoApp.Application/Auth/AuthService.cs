@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -31,7 +31,9 @@ namespace TodoApp.Application.Auth
             var token = await _userManager.GenerateTokenAsync(user);
             return new TokenResponse
             {
-                Value = token.Value
+                Value = token.Value,
+                Username = input.Username,
+                Password = input.Password 
             };
         }
     }

@@ -50,15 +50,15 @@ namespace TodoApp.Web.Controllers
         [HttpGet]
         public async Task<PagedResultResponse<CategoryResponse>> GetAllAsync([FromQuery] GetCategoriesRequest input)
         {
-           // StringValues headerValues="";
-            //var nameFilter = "";
-            //if (Request.Headers.TryGetValue("Token", out headerValues))
-           // {
-           //     nameFilter = headerValues.FirstOrDefault();
-           // }
-            return await _categoryService.GettAllAsync(input);
+      //StringValues headerValues = "";
+      //var nameFilter = "";
+      //if (Request.Headers.TryGetValue("Token", out  headerValues))
+      //{
+      //  nameFilter = headerValues.FirstOrDefault();
+      //}
+      return await _categoryService.GettAllAsync(input);
 
-        }
+        } 
 
                 
 

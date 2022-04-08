@@ -1,13 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
+using Microsoft.Extensions.Primitives;
 using Microsoft.OpenApi.Models;
 using System;
+using System.Threading.Tasks;
 using TodoApp.Application.Auth;
 using TodoApp.Application.Categories;
 using TodoApp.Application.Contracts.Auth;
@@ -23,6 +24,10 @@ using TodoApp.EntityFrameworkCore;
 using TodoApp.EntityFrameworkCore.Categories;
 using TodoApp.EntityFrameworkCore.TodoItems;
 using TodoApp.EntityFrameworkCore.Users;
+using Microsoft.AspNetCore.Http.Headers;
+
+
+
 
 namespace TodoApp.Web
 {
@@ -71,6 +76,7 @@ namespace TodoApp.Web
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApp.Web", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -83,7 +89,14 @@ namespace TodoApp.Web
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApp.Web v1"));
             }
 
-            app.UseCors("AllowOrigin");
+       app.UseTodoMiddleware();
+      //app.Run(async (context) =>
+      //{
+      //  await context.Response.WriteAsync("Hello World!");
+      //});
+
+
+      app.UseCors("AllowOrigin");
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -98,5 +111,10 @@ namespace TodoApp.Web
             app.UseCors("AllowOrigin");
 
         }
-    }
+
+   
+  }
+
+  
 }
+
