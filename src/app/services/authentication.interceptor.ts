@@ -5,7 +5,10 @@ import {
   HttpRequest,
   HttpHandler,
   HttpEvent,
-  HttpInterceptor
+  HttpInterceptor,
+  HttpClientModule 
+  
+
 } from '@angular/common/http';
 import { Observable } from 'rxjs';
 

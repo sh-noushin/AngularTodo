@@ -34,6 +34,8 @@ import { UsersComponent } from './users/users.component';
 import { ShowUsersComponent } from './users/show-users/show-users.component';
 import { AddUserComponent } from './users/add-user/add-user.component';
 import { EditUserComponent } from './users/edit-user/edit-user.component';
+import { AuthenticationInterceptor } from './services/authentication.interceptor';
+
 
 
 @NgModule({
@@ -74,11 +76,11 @@ import { EditUserComponent } from './users/edit-user/edit-user.component';
     MatInputModule
   ],
   providers: [
-    // {
-    //   provide: HTTP_INTERCEPTORS,
-    //   useClass: AuthinterceptorService,
-    //   multi: true,
-    // },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthenticationInterceptor,
+      multi: true,
+    },
   ],
   bootstrap: [AppComponent],
   entryComponents:[AddCatComponent,EditCatComponent]
