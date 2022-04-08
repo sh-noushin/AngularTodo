@@ -1,13 +1,13 @@
 export class UserAuthBase
 {
     userName:string="";
-    bearerToken:string="";
+    value:string="";
     isAuthenticated: boolean = false;
 
     init(): void{
 
         this.userName="";
-        this.bearerToken="";
+        this.value="";
         this.isAuthenticated = false;
 
 
