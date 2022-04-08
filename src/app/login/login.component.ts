@@ -31,7 +31,9 @@ export class LoginComponent implements OnInit {
     this.securityObject?.init();
     this.securityService.login(this.user)
     .subscribe(resp => {
-      localStorage.setItem("AuthObject" , JSON.stringify(resp));
+     // localStorage.setItem("AuthObject" , JSON.stringify(resp));
+     localStorage.setItem("Token" , resp.value);
+
       this.securityObject = resp;
       if (this.returnUrl)
       {
@@ -43,5 +45,6 @@ export class LoginComponent implements OnInit {
     }
       
       );
+      
   }
 }
