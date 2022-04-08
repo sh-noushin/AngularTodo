@@ -24,5 +24,6 @@ export class AppComponent {
     this.securityService.logout();
     this.securityObject = this.securityService.securityObject;
     localStorage.removeItem("AuthObject");
+    localStorage.removeItem("Token");
     }
 }

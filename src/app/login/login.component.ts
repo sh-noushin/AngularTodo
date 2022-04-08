@@ -31,11 +31,13 @@ export class LoginComponent implements OnInit {
     this.securityObject?.init();
     this.securityService.login(this.user)
     .subscribe(resp => {
-     // localStorage.setItem("AuthObject" , JSON.stringify(resp));
-     localStorage.setItem("Token" , resp.value);
+      localStorage.setItem("AuthObject" , JSON.stringify(resp));
+      localStorage.setItem('Token', resp.value.toString());
 
       this.securityObject = resp;
-      if (this.returnUrl)
+    var t = localStorage.getItem('Token');
+    console.log("token value inside login component is :"+ t);      
+    if (this.returnUrl)
       {
         this.router.navigateByUrl(this.returnUrl);
       }
@@ -44,7 +46,7 @@ export class LoginComponent implements OnInit {
       }
     }
       
-      );
+     );
       
   }
 }

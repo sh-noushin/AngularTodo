@@ -3,7 +3,6 @@ import { UserAuthBase } from "../shared/security/user-auth-base";
 
 export class AppUserAuth extends UserAuthBase {
     canAccessTodos: boolean = false;
-    
     canAccessCategories: boolean = false;  
     canAccessUsers: boolean = false;  
     canAccessHome : boolean = false;
@@ -15,6 +14,7 @@ export class AppUserAuth extends UserAuthBase {
       this.canAccessCategories = false;
       this.canAccessUsers = false;
       this.canAccessHome = false;
+      this.isAuthenticated = false;
 
       
     }

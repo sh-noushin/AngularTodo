@@ -21,7 +21,7 @@ export class CategoryService {
   getCatList(filterText:string,skipCount:number,maxResultCount:number,sorting:string): Observable<CategoryResponse>
   {
     var t:any ="";
-     t = localStorage.getItem('token');
+     t = localStorage.getItem('Token');
     return this.http.get<CategoryResponse>(this.APIUrl+'/Categories?FilterText='+filterText+'&SkipCount='+
     skipCount+'&MaxReasultCount='+maxResultCount+'&Sorting='+sorting 
     
@@ -32,7 +32,7 @@ export class CategoryService {
         //   }
           
           );
-    // .s
+   
     // pipe(
     //    map((data: CategoryResponse) => {
     //      return data;

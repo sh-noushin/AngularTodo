@@ -36,9 +36,12 @@ export class SecurityService {
    {
 
       var tempresult =  this.http.post<AppUserAuth>(this.APIUrl+'/Auth' , entity)
-      .subscribe(resp => {
-        localStorage.setItem("AuthObject" , JSON.stringify(resp));
-        localStorage.setItem("Token" , resp.value);
+       .subscribe(resp => {
+         localStorage.setItem("AuthObject" , JSON.stringify(resp));
+         localStorage.setItem('Token', resp.value.toString());
+
+          var t = localStorage.getItem('Token');
+          console.log("token value inside security service is :"+ t);    
 
       });
      if (tempresult !=null)
@@ -60,7 +63,7 @@ export class SecurityService {
 
   getAuthToken():any {
 
-    var t: any= "";
+    var t: any;
     t = localStorage.getItem('Token');
     return  t;
     }

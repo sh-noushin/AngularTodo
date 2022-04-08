@@ -63,7 +63,8 @@ export class ShowCatComponent implements OnInit {
 
   ngOnInit(): void {
 
-
+    var t = localStorage.getItem('Token');
+    console.log("token value is :"+ t);
     
      this.refreshCatList();
      this.listData.sort=this.sorting;
