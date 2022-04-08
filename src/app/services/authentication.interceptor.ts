@@ -5,8 +5,7 @@ import {
   HttpRequest,
   HttpHandler,
   HttpEvent,
-  HttpInterceptor,
-  HttpClientModule 
+  HttpInterceptor
   
 
 } from '@angular/common/http';
