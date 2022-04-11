@@ -17,11 +17,14 @@ export class AuthenticationInterceptor implements HttpInterceptor {
   constructor(private service: SecurityService) {}
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-
+    var t = localStorage.getItem('Token');
+    console.log("token value inside interceptor is :"+ t); 
+    if(t != null)
+    {
 
     request = request.clone({ headers: request.headers.set("Token", this.service.getAuthToken())});
-    var t = localStorage.getItem('Token');
-
-    console.log("token value inside interceptor is :"+ t);   
-    return next.handle(request);  }
+    }
+      
+    return next.handle(request); 
+   }
 }

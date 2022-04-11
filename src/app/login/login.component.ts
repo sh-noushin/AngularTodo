@@ -13,7 +13,7 @@ import { MessageService } from '../shared/messaging/message.service';
 export class LoginComponent implements OnInit {
 
   user: AppUser = new AppUser();
-  securityObject : AppUserAuth | undefined;
+  securityObject : AppUserAuth = new AppUserAuth();
   returnUrl :string | undefined;
 
   constructor(private securityService: SecurityService,
@@ -29,14 +29,9 @@ export class LoginComponent implements OnInit {
   {
     this.msgService.clearAll();
     this.securityObject?.init();
-    this.securityService.login(this.user)
-    .subscribe(resp => {
-      localStorage.setItem("AuthObject" , JSON.stringify(resp));
-      localStorage.setItem('Token', resp.value.toString());
+    this.securityService.login(this.user);
+                
 
-      this.securityObject = resp;
-    var t = localStorage.getItem('Token');
-    console.log("token value inside login component is :"+ t);      
     if (this.returnUrl)
       {
         this.router.navigateByUrl(this.returnUrl);
@@ -44,9 +39,7 @@ export class LoginComponent implements OnInit {
       else{
         this.router.navigateByUrl("home");
       }
-    }
-      
-     );
-      
+   
+     
   }
 }

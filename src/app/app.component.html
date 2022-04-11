@@ -29,7 +29,7 @@
     <a class="nav-item nav-link" *ngIf="securityObject!.canAccessCategories && securityObject!.isAuthenticated" color="primary"  routerLink="/categories" style="margin-right: 10px; width: 100px;">Categories</a>
     <a class="nav-item nav-link" *ngIf="securityObject!.canAccessUsers && securityObject!.isAuthenticated" color="primary"  routerLink="/users" style="margin-right: 10px; width: 100px;">Users</a>
     <a class="nav-item nav-link" *ngIf="!securityObject!.isAuthenticated" color="primary"  routerLink="/login" style="margin-right: 10px; width: 100px;">Login</a>
-    <a class="nav-item nav-link" *ngIf="securityObject!.isAuthenticated" color="primary"  routerLink="/" style="margin-right: 10px; width: 150px;" (click)="logout()">Logout {{securityObject!.userName}}</a>
+    <a class="nav-item nav-link" *ngIf="securityObject!.isAuthenticated" color="primary"  routerLink="/" style="margin-right: 10px; width: 150px;" (click)="logout()">Logout {{securityObject!.username}}</a>
   </div>
 </div>
 

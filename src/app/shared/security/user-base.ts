@@ -1,5 +1,7 @@
 export class UserBase {
-    userId?: number = 0;
-    userName: string = "";
+   
+    username: string = "";
     password: string = "";
+    value:number = 0
+
 }

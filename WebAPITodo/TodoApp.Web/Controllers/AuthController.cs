@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using TodoApp.Application.Contracts.Auth;
 using TodoApp.Application.Contracts.Auth.Dtos.Request;
@@ -22,5 +22,14 @@ namespace TodoApp.Web.Controllers
         {
             return _service.LoginAsync(input);
         }
+
+    [HttpGet]
+    [Route("test")]
+    public string Test()
+    {
+      string x = "helllloooooo";
+      return x;
     }
+
+  }
 }

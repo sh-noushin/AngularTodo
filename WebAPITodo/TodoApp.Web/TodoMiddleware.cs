@@ -1,9 +1,8 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
-using System.Threading.Tasks;
 using Microsoft.Extensions.Primitives;
-
+using System.Threading.Tasks;
 
 namespace TodoApp.Web
 {
@@ -14,15 +13,16 @@ namespace TodoApp.Web
     private readonly ILogger _logger;
 
 
+
     public TodoMiddleware(RequestDelegate next, ILoggerFactory logFactory)
     {
       _next = next;
       _logger = logFactory.CreateLogger("TodoMiddleware");
-
     }
 
     public async Task Invoke(HttpContext httpContext)
     {
+
       _logger.LogInformation("MyMiddleware executing..");
       // await httpContext.Response.WriteAsync("Hello World!");
       StringValues headerValues = "";
@@ -31,11 +31,6 @@ namespace TodoApp.Web
       httpContext.Request.Headers.TryGetValue("Token", out headerValues);
       nameFilter = headerValues.ToString();
       _logger.LogInformation(nameFilter);
-
-      if (httpContext.Request.Headers.TryGetValue("Token", out headerValues))
-      {
-        nameFilter = headerValues.ToString();
-      }
 
       await _next(httpContext); // calling next middleware
     }

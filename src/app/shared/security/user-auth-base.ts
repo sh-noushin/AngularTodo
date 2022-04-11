@@ -1,12 +1,12 @@
 export class UserAuthBase
 {
-    userName:string="";
+    username:string="";
     value:number = 0
     isAuthenticated: boolean = false;
 
     init(): void{
 
-      this.userName = "";
+      this.username = "";
       this.value = 0;
       this.isAuthenticated =false;
 

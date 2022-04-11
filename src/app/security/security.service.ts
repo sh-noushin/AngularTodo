@@ -21,21 +21,23 @@ export class SecurityService {
 
   login(entity: AppUser): Observable<AppUserAuth> {
     // Set user name
-    this.securityObject.userName = entity.userName;
+    this.securityObject.username = entity.username;
   
-    if (entity.userName.toLowerCase() == "admin" && entity.password == "12345678") {
+   // return this.http.post<any>(this.APIUrl+'/Auth' , entity);
+    if (entity.username.toLowerCase() == "admin" && entity.password == "12345678") {
 
       this.securityObject.isAuthenticated = true;
       this.securityObject.canAccessTodos = true;
       this.securityObject.canAccessCategories = true;
       this.securityObject.canAccessUsers = true;
-     
+      this.securityObject.canAccessHome = true;
 
+     
     }
    else
    {
 
-      var tempresult =  this.http.post<AppUserAuth>(this.APIUrl+'/Auth' , entity)
+      var tempresult =  this.http.post<AppUser>(this.APIUrl+'/Auth' , entity)
        .subscribe(resp => {
          localStorage.setItem("AuthObject" , JSON.stringify(resp));
          localStorage.setItem('Token', resp.value.toString());
@@ -49,6 +51,8 @@ export class SecurityService {
       this.securityObject.isAuthenticated = true;
       this.securityObject.canAccessTodos = true;
       this.securityObject.canAccessCategories = true;
+      this.securityObject.canAccessHome = true;
+
       
 
      }
@@ -56,7 +60,9 @@ export class SecurityService {
     return of(this.securityObject);
         
   }
-
+hello(): Observable<any> {
+  return this.http.get('https://localhost:5001/TodoAuth',{responseType: 'text'});
+}
   logout(): void {
     this.securityObject.init();
   }
