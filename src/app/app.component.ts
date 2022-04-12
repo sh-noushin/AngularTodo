@@ -15,13 +15,16 @@ export class AppComponent {
   securityObject : AppUserAuth | undefined
   constructor(private securityService: SecurityService)
   {
+    
     this.securityObject = securityService.securityObject;
   }
 
   logout(): void
   {
-
+    
+    
     this.securityService.logout();
+    this.securityService.securityObject.init();
     this.securityObject = this.securityService.securityObject;
     localStorage.removeItem("AuthObject");
     localStorage.removeItem("Token");

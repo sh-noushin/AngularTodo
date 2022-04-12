@@ -1,16 +1,14 @@
-
-
 <div style="overflow:auto; text-align: center; display: flex; flex-direction:column; justify-content:right; 
   width: 100%; align-self: center;">
 
   <div class="mat-elevation-z8" style="overflow:auto; display: flex; flex-direction:column; width: 80%; 
        align-self: center; ">
-       <div style="overflow:auto; display: flex; flex-direction:column; width: 300px; margin-left: 20px;">
-    <mat-form-field appearance="standard"  >
-      <mat-label>Filter</mat-label>
-      <input matInput (keyup)="applyFilter($event)" placeholder="Search columns" #input>
-    </mat-form-field>
-  </div>
+    <div style="overflow:auto; display: flex; flex-direction:column; width: 300px; margin-left: 20px;">
+      <mat-form-field appearance="standard">
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" placeholder="Search columns" #input>
+      </mat-form-field>
+    </div>
     <table mat-table [dataSource]="listData" matSort #empTbSort="matSort" matSort
       (matSortChange)="announceSortChange($event)">
 
@@ -18,8 +16,8 @@
       <mat-row *matRowDef="let row; columns:displayedColumns;"></mat-row>
 
       <ng-container matColumnDef="Options">
-        <mat-header-cell *matHeaderCellDef >Options</mat-header-cell>
-        <mat-cell *matCellDef="let row" >
+        <mat-header-cell *matHeaderCellDef>Options</mat-header-cell>
+        <mat-cell *matCellDef="let row">
           <button mat-icon-button style="background-color: white; border: none; color: blue;" (click)="onEdit(row)">
             <mat-icon aria-label="Edit">edit</mat-icon>
           </button>
@@ -30,23 +28,18 @@
         </mat-cell>
       </ng-container>
 
-      <!-- <ng-container matColumnDef="Id">
-        <mat-header-cell *matHeaderCellDef mat-sort-header style="font-size: 15px; width: 150px;">Id</mat-header-cell>
-        <mat-header-cell *matCellDef="let element">{{element.id}}</mat-header-cell>
-      </ng-container> -->
-
       <ng-container matColumnDef="Title">
-        <mat-header-cell *matHeaderCellDef mat-sort-header >Title</mat-header-cell>
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Title</mat-header-cell>
         <mat-header-cell *matCellDef="let element">{{element.title}}</mat-header-cell>
       </ng-container>
 
       <ng-container matColumnDef="Done">
-        <mat-header-cell *matHeaderCellDef mat-sort-header >Done</mat-header-cell>
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Done</mat-header-cell>
         <mat-header-cell *matCellDef="let element">{{element.done}}</mat-header-cell>
       </ng-container>
 
       <ng-container matColumnDef="Description">
-        <mat-header-cell *matHeaderCellDef mat-sort-header >Description
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Description
         </mat-header-cell>
         <mat-header-cell *matCellDef="let element">{{element.description}}</mat-header-cell>
       </ng-container>
@@ -58,11 +51,9 @@
   </div>
 
 
-
-  
   <button mat-fab aria-label="Example icon button with a heart icon" (click)="onAdd()"
     style="background-color:rgb(51, 151, 233);  border: none; margin-left:150px; margin-top:50px; margin-bottom: 30px; align-self: left;">
     <mat-icon aria-label="Add">add</mat-icon>
   </button>
- 
+
 </div>

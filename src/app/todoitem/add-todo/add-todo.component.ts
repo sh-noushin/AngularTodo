@@ -44,7 +44,6 @@ export class AddTodoComponent implements OnInit {
   ) { }
 
 
-
   ngOnInit(): void {
 
     this.reload();
@@ -66,7 +65,6 @@ export class AddTodoComponent implements OnInit {
 
       this.newTodo.categoryId = this.selectedCategory?.id;
       this.newTodo.done = this.isDone;
-      console.log("id is:" + this.newTodo.categoryId + "   title is:" + this.newTodo.title + "  desc is " + this.newTodo.description + "  isdone is " + this.newTodo.done);
       this.todoService.addTodo(this.newTodo).subscribe(res => {
         this.resetComponent(form);
         this.onClose();
@@ -76,7 +74,6 @@ export class AddTodoComponent implements OnInit {
     }
 
   }
-
 
   resetComponent(form?: NgForm) {
     if (form != null)

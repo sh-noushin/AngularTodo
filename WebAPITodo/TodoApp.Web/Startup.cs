@@ -31,90 +31,95 @@ using Microsoft.AspNetCore.Http.Headers;
 
 namespace TodoApp.Web
 {
-    public class Startup
+  public class Startup
+  {
+    public Startup(IConfiguration configuration)
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+      Configuration = configuration;
 
-        public IConfiguration Configuration { get; }
+    }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-            services.AddCors(options =>
-            {
-                options.AddPolicy(name: "AllowOrigin",
-                    builder =>
-                    {
-                        builder.WithOrigins("http://localhost:44351", "http://localhost:5001", "http://localhost:4200")
-                                            .AllowAnyHeader()
-                                            .AllowAnyMethod();
-                    });
-            });
+    public IConfiguration Configuration { get; }
 
-            services.AddDbContext<TodoAppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+    // This method gets called by the runtime. Use this method to add services to the container.
+    public void ConfigureServices(IServiceCollection services)
+    {
+      services.AddCors(options =>
+      {
+        options.AddPolicy(name: "AllowOrigin",
+                  builder =>
+                  {
+                builder.WithOrigins("http://localhost:44351", "http://localhost:5001", "http://localhost:4200")
+                                          .AllowAnyHeader()
+                                          .AllowAnyMethod();
+              });
+      });
 
-            services.AddScoped<ICategoryService , CategoryService>();
-            services.AddScoped<ITodoItemService , TodoItemService>();
-            services.AddScoped<IMyUserService , MyUserService>();
-            services.AddScoped<IAuthService , AuthService>();
-            services.AddScoped<UserManager , UserManager>();
+      services.AddDbContext<TodoAppDbContext>(options =>
+          options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
-
-            services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<ITodoItemRepository, TodoItemRepository>();
-            services.AddScoped<IUserRepository, UserRepository>();
+      services.AddScoped<ICategoryService, CategoryService>();
+      services.AddScoped<ITodoItemService, TodoItemService>();
+      services.AddScoped<IMyUserService, MyUserService>();
+      services.AddScoped<IAuthService, AuthService>();
+      services.AddScoped<UserManager, UserManager>();
 
 
-            services.AddControllers();
-          
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApp.Web", Version = "v1" });
-            });
+      services.AddScoped<ICategoryRepository, CategoryRepository>();
+      services.AddScoped<ITodoItemRepository, TodoItemRepository>();
+      services.AddScoped<IUserRepository, UserRepository>();
 
-        }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApp.Web v1"));
-            }
+      services.AddControllers();
 
-       app.UseTodoMiddleware();
+
+      services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+      services.AddSwaggerGen(c =>
+      {
+        c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApp.Web", Version = "v1" });
+      });
+
+    }
+
+    // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    {
+      if (env.IsDevelopment())
+      {
+        app.UseDeveloperExceptionPage();
+        app.UseSwagger();
+        app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "TodoApp.Web v1"));
+      }
+
+      app.UseTodoMiddleware();
+      app.UseCors("AllowOrigin");
+      app.UseHttpsRedirection();
+
+      app.UseRouting();
+
+      app.UseAuthorization();
+
+      app.UseEndpoints(endpoints =>
+      {
+        endpoints.MapControllers();
+      });
+
+      app.UseCors("AllowOrigin");
+
+
+     
+
       //app.Run(async (context) =>
       //{
       //  await context.Response.WriteAsync("Hello World!");
       //});
 
 
-      app.UseCors("AllowOrigin");
-            app.UseHttpsRedirection();
 
-            app.UseRouting();
 
-            app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+    }
 
-            app.UseCors("AllowOrigin");
-
-        }
-
-   
   }
-
-  
 }
 

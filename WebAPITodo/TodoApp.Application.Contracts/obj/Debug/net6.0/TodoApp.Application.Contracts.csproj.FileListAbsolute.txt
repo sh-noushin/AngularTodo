@@ -66,3 +66,20 @@ D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Application.Contract
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\refint\TodoApp.Application.Contracts.dll
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.pdb
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\ref\TodoApp.Application.Contracts.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\bin\Debug\net6.0\TodoApp.Application.Contracts.deps.json
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\bin\Debug\net6.0\TodoApp.Application.Contracts.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\bin\Debug\net6.0\TodoApp.Application.Contracts.pdb
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\bin\Debug\net6.0\TodoApp.Domain.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\bin\Debug\net6.0\TodoApp.Domain.Shared.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\bin\Debug\net6.0\TodoApp.Domain.Shared.pdb
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\bin\Debug\net6.0\TodoApp.Domain.pdb
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.csproj.AssemblyReference.cache
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.AssemblyInfoInputs.cache
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.AssemblyInfo.cs
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.csproj.CopyComplete
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\refint\TodoApp.Application.Contracts.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\TodoApp.Application.Contracts.pdb
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.Application.Contracts\obj\Debug\net6.0\ref\TodoApp.Application.Contracts.dll

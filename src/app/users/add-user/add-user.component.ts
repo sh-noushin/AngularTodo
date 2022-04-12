@@ -38,7 +38,6 @@ export class AddUserComponent implements OnInit {
  
   onSubmit(form:any){
 
-   // this.service.formData = form.value;
     var newUser = new User();
     newUser.userName =form.userName;
     newUser.password = form.password

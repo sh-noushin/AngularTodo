@@ -51,7 +51,6 @@ export class ShowUsersComponent implements OnInit {
 
 
   onEdit(user: any) {
-    //const dialogConfig = new MatDialogConfig<{Id:number ; Name:string;}>();
     this.service.formData.id = user.id;
     this.service.formData.userName = user.userName;
     this.service.formData.password = user.password;
@@ -62,7 +61,7 @@ export class ShowUsersComponent implements OnInit {
     let Password = user.password;
     const dialogRef = this.dialog.open(EditUserComponent, {
 
-      data: { id: Id, username: UserName , password: Password }
+      data: { id: Id, username: UserName, password: Password }
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -87,11 +86,6 @@ export class ShowUsersComponent implements OnInit {
   }
 
   refreshUserList() {
-    //this.dummyData=[{Id:1 , Name:'IT'},
-    //{Id:2 , Name:'Finance'}];
-    //this.listData.data=this.dummyData;
-
-
 
     this.service.getUserist(this.filterText, this.skipCount, this.pageSize, this.sortingElement).subscribe(data => {
       this.listData = new MatTableDataSource(data.items);
@@ -105,9 +99,8 @@ export class ShowUsersComponent implements OnInit {
       });
       this.isLoading = false;
     }
-     
-    );
 
+    );
 
   }
 
@@ -126,7 +119,6 @@ export class ShowUsersComponent implements OnInit {
   }
 
   pageChanged(event: any) {
-    console.log({ event });
     if (this.pageSize != event.pageSize) {
       this.paginator.pageIndex = 0;
       this.pageSize = event.pageSize;

@@ -3,7 +3,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { AppUser } from '../security/app-user';
 import { AppUserAuth } from '../security/app-user-auth';
 import { SecurityService } from '../security/security.service';
-import { MessageService } from '../shared/messaging/message.service';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +16,6 @@ export class LoginComponent implements OnInit {
   returnUrl :string | undefined;
 
   constructor(private securityService: SecurityService,
-     private msgService: MessageService,
      private route: ActivatedRoute,
      private router:Router) { }
 
@@ -27,11 +25,9 @@ export class LoginComponent implements OnInit {
 
   login()
   {
-    this.msgService.clearAll();
-    this.securityObject?.init();
+    
     this.securityService.login(this.user);
-                
-
+    this.securityObject.username  = this.securityService.securityObject.username;
     if (this.returnUrl)
       {
         this.router.navigateByUrl(this.returnUrl);

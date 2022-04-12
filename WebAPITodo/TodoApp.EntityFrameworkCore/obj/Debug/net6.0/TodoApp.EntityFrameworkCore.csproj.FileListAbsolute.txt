@@ -74,3 +74,22 @@ D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.pdb
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.genruntimeconfig.cache
 D:\_Noushin\Projects\Angular\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\ref\TodoApp.EntityFrameworkCore.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\bin\Debug\net6.0\TodoApp.EntityFrameworkCore.deps.json
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\bin\Debug\net6.0\TodoApp.EntityFrameworkCore.runtimeconfig.json
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\bin\Debug\net6.0\TodoApp.EntityFrameworkCore.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\bin\Debug\net6.0\TodoApp.EntityFrameworkCore.pdb
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\bin\Debug\net6.0\TodoApp.Domain.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\bin\Debug\net6.0\TodoApp.Domain.Shared.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\bin\Debug\net6.0\TodoApp.Domain.pdb
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\bin\Debug\net6.0\TodoApp.Domain.Shared.pdb
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.csproj.AssemblyReference.cache
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.AssemblyInfoInputs.cache
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.AssemblyInfo.cs
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.csproj.CoreCompileInputs.cache
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.csproj.CopyComplete
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\refint\TodoApp.EntityFrameworkCore.dll
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.pdb
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\TodoApp.EntityFrameworkCore.genruntimeconfig.cache
+D:\_Noushin\Projects\Angular\New folder\AngularTodo\WebAPITodo\TodoApp.EntityFrameworkCore\obj\Debug\net6.0\ref\TodoApp.EntityFrameworkCore.dll

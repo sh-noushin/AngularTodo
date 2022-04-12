@@ -1,27 +1,25 @@
-
 <div style=" display:flex; flex-direction:column; ">
 
- <div  style="display:flex; flex-direction: row-reverse; ">
+  <div style="display:flex; flex-direction: row-reverse; ">
 
-  <button mat-button mat-mini-fab (click)="onClose()" style="justify-self: right; cursor: pointer;">
-    <mat-icon aria-label="close">close</mat-icon>
-  </button>
+    <button mat-button mat-mini-fab (click)="onClose()" style="justify-self: right; cursor: pointer;">
+      <mat-icon aria-label="close">close</mat-icon>
+    </button>
 
-</div>
+  </div>
 
 
-  <form  #formControl="ngForm" (ngSubmit)="onSubmit(formControl.value)"
- >
+  <form #formControl="ngForm" (ngSubmit)="onSubmit(formControl.value)">
 
-    
-    <div class="form" >
+
+    <div class="form">
       <mat-form-field color="accent">
         <input matInput #input class="form-control" placeholder=" Title" required maxlength="20" type="text"
           [(ngModel)]="newTodo.title" name="title">
 
       </mat-form-field>
     </div>
-    <div class="form" >
+    <div class="form">
       <mat-form-field color="accent">
         <input matInput #input class="form-control" placeholder="Descriptin" minlength="2" maxlength="20" type="text"
           [(ngModel)]="newTodo.description" name="description">
@@ -39,12 +37,12 @@
       </mat-select>
     </mat-form-field>
     <div>
-    <label>
-      <input type="checkbox" [checked]="isDone" (change)="checkBoxChanged()">
-      isDone
+      <label>
+        <input type="checkbox" [checked]="isDone" (change)="checkBoxChanged()">
+        isDone
 
-    </label>
-  </div>
+      </label>
+    </div>
     <div style="color: red; margin-top: 20px; margin-bottom: 20px;" *ngIf="errorDiv">
       Category or Title is not entered.
     </div>

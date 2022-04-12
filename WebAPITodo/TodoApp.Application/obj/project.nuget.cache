@@ -1,12 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "qAh4KOly89oJGwn7huCVYylfL39EFH7ZMMMrWGH7y/dNL38k07PCrjojAbwDsQxbYyC0QaArF7iMFtddTVCnPA==",
+  "dgSpecHash": "hS328ULdst232gLKEstKfOTfog758CRXThIMrGf1NeNQkrEwGp8S5VXv6Jvno0a2c7y3vSUlH3AvRY+TDpAv1A==",
   "success": true,
-  "projectFilePath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Application\\TodoApp.Application.csproj",
+  "projectFilePath": "D:\\_Noushin\\Projects\\Angular\\New folder\\AngularTodo\\WebAPITodo\\TodoApp.Application\\TodoApp.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ngu\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\ngu\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.4\\microsoft.aspnetcore.authorization.6.0.4.nupkg.sha512",
+    "C:\\Users\\ngu\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.4\\microsoft.aspnetcore.metadata.6.0.4.nupkg.sha512",
     "C:\\Users\\ngu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\ngu\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+    "C:\\Users\\ngu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ngu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
+    "C:\\Users\\ngu\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\ngu\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\ngu\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\ngu\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

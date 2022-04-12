@@ -26,9 +26,6 @@ import {MatInputModule} from '@angular/material/input';
 import { HTTP_INTERCEPTORS } from "@angular/common/http";
 
 import { LoginComponent } from './login/login.component';
-import { ValidationMessageComponent } from './shared/messaging/validation-message.component';
-import { InfoMessageComponent } from './shared/messaging/info-message.component';
-import { ExceptionMessageComponent } from './shared/messaging/exception-message.component';
 import { HomeComponent } from './home/home.component';
 import { UsersComponent } from './users/users.component';
 import { ShowUsersComponent } from './users/show-users/show-users.component';
@@ -51,10 +48,7 @@ import { AuthenticationInterceptor } from './services/authentication.interceptor
     EditTodoComponent,
     ShowTodoComponent,
     LoginComponent,
-    ValidationMessageComponent,
-    InfoMessageComponent,
-    ExceptionMessageComponent,
-    HomeComponent,
+     HomeComponent,
     UsersComponent,
     ShowUsersComponent,
     AddUserComponent,

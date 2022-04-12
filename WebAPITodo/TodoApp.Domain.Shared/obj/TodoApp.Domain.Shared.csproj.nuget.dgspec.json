@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {}
+    "D:\\_Noushin\\Projects\\Angular\\New folder\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {}
   },
   "projects": {
-    "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
+    "D:\\_Noushin\\Projects\\Angular\\New folder\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
+        "projectUniqueName": "D:\\_Noushin\\Projects\\Angular\\New folder\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
         "projectName": "TodoApp.Domain.Shared",
-        "projectPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
+        "projectPath": "D:\\_Noushin\\Projects\\Angular\\New folder\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\TodoApp.Domain.Shared.csproj",
         "packagesPath": "C:\\Users\\ngu\\.nuget\\packages\\",
-        "outputPath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\obj\\",
+        "outputPath": "D:\\_Noushin\\Projects\\Angular\\New folder\\AngularTodo\\WebAPITodo\\TodoApp.Domain.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ngu\\AppData\\Roaming\\NuGet\\NuGet.Config",

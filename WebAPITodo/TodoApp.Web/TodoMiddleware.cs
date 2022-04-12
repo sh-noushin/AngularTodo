@@ -11,7 +11,7 @@ namespace TodoApp.Web
   {
     private readonly RequestDelegate _next;
     private readonly ILogger _logger;
-
+    public static string x;
 
 
     public TodoMiddleware(RequestDelegate next, ILoggerFactory logFactory)
@@ -30,9 +30,12 @@ namespace TodoApp.Web
 
       httpContext.Request.Headers.TryGetValue("Token", out headerValues);
       nameFilter = headerValues.ToString();
+      
       _logger.LogInformation(nameFilter);
+      
+        await _next(httpContext); // calling next middleware
 
-      await _next(httpContext); // calling next middleware
+      
     }
   }
 

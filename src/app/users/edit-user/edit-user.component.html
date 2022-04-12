@@ -1,53 +1,56 @@
-<div  style="display:flex; flex-direction: row-reverse;width: 400px; ">
-        
-    <button mat-button mat-mini-fab (click)="onClose()" style="justify-self: right; cursor: pointer; ">
-      <mat-icon>close</mat-icon>
-    </button>
-    
+<div style="display:flex; flex-direction: row-reverse;width: 400px; ">
+
+  <button mat-button mat-mini-fab (click)="onClose()" style="justify-self: right; cursor: pointer; ">
+    <mat-icon>close</mat-icon>
+  </button>
+
+</div>
+
+
+
+<form class="mat-dialog-content" (ngSubmit)="onSubmit(formControl.value)" #formControl="ngForm"
+  style="overflow: auto; height: 350px; width: 100%;">
+
+  <div class="m-3 input-group" style="display:flex; flex-direction: column; width: 100%;">
+
+    <div class="form">
+      <mat-form-field color="accent" style="overflow: auto;  width: 100%;">
+        <input matInput #input class="form-control" placeholder="Id" [(ngModel)]="this.data.id" name="id"
+          readonly="readonly">
+
+      </mat-form-field>
     </div>
-  
+  </div>
 
-    <!-- <div style="overflow: auto; height: 450px; width: 400px;"> -->
-    
-  
-    <form class="mat-dialog-content" (ngSubmit)="onSubmit(formControl.value)" #formControl="ngForm" style="overflow: auto; height: 350px; width: 100%;">
-  
-      <div class="m-3 input-group" style="display:flex; flex-direction: column; width: 100%;">
-        
-      <div class="form">
-        <mat-form-field color="accent" style="overflow: auto;  width: 100%;">
-          <input matInput #input class="form-control" placeholder="Id" [(ngModel)]="this.data.id" name="id" readonly="readonly" >
-          
-        </mat-form-field>
-      </div>
-      </div>
-  
-      <div class="m-3 input-group" style="display:flex; flex-direction: column; width: 100%;">
-        
-      <div class="form">
-        <mat-form-field color="accent" style="overflow: auto;  width: 100%;">
-          <input matInput  #input class="form-control" placeholder="Name" [(ngModel)]="this.data.username" name="username" required >
-          
-        </mat-form-field>
-      </div>
-      </div>
+  <div class="m-3 input-group" style="display:flex; flex-direction: column; width: 100%;">
 
-      <div class="m-3 input-group" style="display:flex; flex-direction: column; width: 100%;">
-        
-        <div class="form">
-          <mat-form-field color="accent" style="overflow: auto;  width: 100%;">
-            <input matInput  #input class="form-control" placeholder="Name" [(ngModel)]="this.data.password" name="password" required >
-            
-          </mat-form-field>
-        </div>
-        </div>
-    
-  
-                             
-  
-      <div mat-dialog-actions>
-        <button class="m-3" mat-raised-button  color="primary" type="submit" [disabled]="!formControl.valid" [mat-dialog-close]="1" type="submit">Save</button>
-        <button class="m-3" mat-raised-button color="primary" (click)="onNoClick()" tabindex="-1">Cancel</button>
-      </div>
-    </form>
-  <!-- </div> -->
+    <div class="form">
+      <mat-form-field color="accent" style="overflow: auto;  width: 100%;">
+        <input matInput #input class="form-control" placeholder="Name" [(ngModel)]="this.data.username" name="username"
+          required>
+
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="m-3 input-group" style="display:flex; flex-direction: column; width: 100%;">
+
+    <div class="form">
+      <mat-form-field color="accent" style="overflow: auto;  width: 100%;">
+        <input matInput #input class="form-control" placeholder="Name" [(ngModel)]="this.data.password" name="password"
+          required>
+
+      </mat-form-field>
+    </div>
+  </div>
+
+
+
+
+  <div mat-dialog-actions>
+    <button class="m-3" mat-raised-button color="primary" type="submit" [disabled]="!formControl.valid"
+      [mat-dialog-close]="1" type="submit">Save</button>
+    <button class="m-3" mat-raised-button color="primary" (click)="onNoClick()" tabindex="-1">Cancel</button>
+  </div>
+</form>
+<!-- </div> -->

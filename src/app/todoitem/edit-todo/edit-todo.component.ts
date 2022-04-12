@@ -26,18 +26,10 @@ export class EditTodoComponent implements OnInit {
   }
   formControl = new FormControl('', [
     Validators.required
-    // Validators.email,
   ]);
 
-  getErrorMessage() {
-    return this.formControl.hasError('required') ? 'Required field' :
-      this.formControl.hasError('email') ? 'Not a valid email' :
-        '';
-  }
-
-  submit() {
-    // emppty stuff
-  }
+  
+  
 
   onNoClick(): void {
     this.dialogRef.close();

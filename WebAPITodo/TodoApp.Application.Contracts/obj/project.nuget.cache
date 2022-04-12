@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7RkMpCpBD87GQHxm5xNVl9mArXGO4FrMyvIW/oyrjNvQf2Lo63b8Gj01e//y0JaShyt8aHzQNQugOl03zetaHA==",
+  "dgSpecHash": "o53spXnyL9FUEO1YPf8ZoX5QHmjU5eXkF5xAe+Y6JfXrraPQe9CzffqpVzFQ3/qZ9pawnseMVHL5htbpDG/NDw==",
   "success": true,
-  "projectFilePath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj",
+  "projectFilePath": "D:\\_Noushin\\Projects\\Angular\\New folder\\AngularTodo\\WebAPITodo\\TodoApp.Application.Contracts\\TodoApp.Application.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

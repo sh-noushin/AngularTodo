@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OxL45wX6bqONf9wsszwo49HSIjczpg1Hu1YqaJ/X27RYaZBPseOr4QVxUsovtzjCEpKimSn+uIRG41ojH4ZieQ==",
+  "dgSpecHash": "zx1fYZc4xat8V1SMI8z1tedixqSdcdUBU9vHgak7fkiphPjENkpmepq9v8fUF4qbfJfE925u/paK4aeCh0AfRQ==",
   "success": true,
-  "projectFilePath": "D:\\_Noushin\\Projects\\Angular\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj",
+  "projectFilePath": "D:\\_Noushin\\Projects\\Angular\\New folder\\AngularTodo\\WebAPITodo\\TodoApp.EntityFrameworkCore\\TodoApp.EntityFrameworkCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ngu\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ngu\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

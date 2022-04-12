@@ -18,7 +18,9 @@ namespace TodoApp.Web.Controllers
         }
 
         [HttpPost]
-        public Task<TokenResponse> LoginAsync(LoginRequestInput input)
+    [TodoAuthorizecs()]
+
+    public Task<TokenResponse> LoginAsync(LoginRequestInput input)
         {
             return _service.LoginAsync(input);
         }

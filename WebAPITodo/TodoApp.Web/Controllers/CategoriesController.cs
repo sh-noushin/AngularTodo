@@ -17,7 +17,9 @@ namespace TodoApp.Web.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class CategoriesController : ControllerBase
+  
+
+  public class CategoriesController : ControllerBase
     {
         
 
@@ -48,7 +50,7 @@ namespace TodoApp.Web.Controllers
 
 
         [HttpGet]
-        public async Task<PagedResultResponse<CategoryResponse>> GetAllAsync([FromQuery] GetCategoriesRequest input)
+    public async Task<PagedResultResponse<CategoryResponse>> GetAllAsync([FromQuery] GetCategoriesRequest input)
         {
       //StringValues headerValues = "";
       //var nameFilter = "";

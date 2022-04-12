@@ -14,12 +14,12 @@ import { Category } from 'src/app/models/category-model';
 export class EditCatComponent implements OnInit {
 
 
-  returnUrl :string | undefined;
+  returnUrl: string | undefined;
 
   constructor(public dialogRef: MatDialogRef<EditCatComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
     public service: CategoryService
-    ) { }
+  ) { }
 
 
   ngOnInit(): void {
@@ -27,18 +27,8 @@ export class EditCatComponent implements OnInit {
   }
   formControl = new FormControl('', [
     Validators.required
-    // Validators.email,
   ]);
 
-  getErrorMessage() {
-    return this.formControl.hasError('required') ? 'Required field' :
-      this.formControl.hasError('email') ? 'Not a valid email' :
-        '';
-  }
-
-  submit() {
-    // emppty stuff
-  }
 
   onNoClick(): void {
     this.dialogRef.close();
@@ -57,7 +47,7 @@ export class EditCatComponent implements OnInit {
   onClose() {
     this.dialogRef.close();
     this.service.filter('Register click');
-    
+
 
   }
 
